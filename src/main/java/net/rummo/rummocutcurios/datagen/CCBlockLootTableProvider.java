@@ -31,7 +31,7 @@ public class CCBlockLootTableProvider extends BlockLootSubProvider
     protected void generate()
     {
         this.add(CCBlocks.DEEPSLATE_RUBY_ORE.get(),
-                block -> createMultipleOreDrops(CCBlocks.DEEPSLATE_RUBY_ORE.get(), CCItems.RAW_RUBY.get(), 1, 3));
+                block -> createMultipleOreDrops(CCBlocks.DEEPSLATE_RUBY_ORE.get(), CCItems.ROUGH_RUBY.get(), 1, 3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops)

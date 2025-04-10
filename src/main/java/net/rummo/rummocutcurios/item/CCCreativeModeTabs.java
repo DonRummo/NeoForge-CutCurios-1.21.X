@@ -20,11 +20,12 @@ public class CCCreativeModeTabs
     public static final Supplier<CreativeModeTab> CUTCURIOS_ITEMS_TAB =
             CREATIVE_MODE_TABS.register("cutcurios_items_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.rummocutcurios.cutcurios_items_tab"))
-                    .icon(() -> new ItemStack(CCItems.RAW_RUBY.get())) /// MIGHT CHANGE LATER |||||||||||||||||||
+                    .icon(() -> new ItemStack(CCItems.RUBY.get())) /// MIGHT CHANGE LATER |||||||||||||||||||
                     .displayItems((pParameters, pOutput) -> {
 
                         /** INSERT HERE **/
-                        pOutput.accept(CCItems.RAW_RUBY);
+                        pOutput.accept(CCItems.ROUGH_RUBY);
+                        pOutput.accept(CCItems.RUBY);
 
                     }).build());
 

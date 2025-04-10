@@ -17,6 +17,7 @@ public class CCItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels()
     {
-        basicItem(CCItems.RAW_RUBY.get());
+        basicItem(CCItems.ROUGH_RUBY.get());
+        basicItem(CCItems.RUBY.get());
     }
 }

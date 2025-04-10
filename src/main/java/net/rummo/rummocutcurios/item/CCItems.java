@@ -12,8 +12,10 @@ public class CCItems
 
     /** ITEMS GO HERE **/
 
-    public static final DeferredItem<Item> RAW_RUBY =
-            ITEMS.registerItem("raw_ruby", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> ROUGH_RUBY =
+            ITEMS.registerItem("rough_ruby", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> RUBY =
+            ITEMS.registerItem("ruby", Item::new, new Item.Properties());
 
     /** DO NOT GO BEYOND THIS POINT **/
 
