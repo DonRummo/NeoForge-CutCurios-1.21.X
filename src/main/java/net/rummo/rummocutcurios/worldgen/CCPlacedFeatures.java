@@ -6,7 +6,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import net.rummo.rummocutcurios.RummoCutCurios;
@@ -15,10 +17,15 @@ import java.util.List;
 
 public class CCPlacedFeatures
 {
+    public static final ResourceKey<PlacedFeature> BASALTIC_RUBY_ORE_PLACED_KEY = registerKey("basaltic_ruby_ore_placed");
+
     public static void bootstrap(BootstrapContext<PlacedFeature> context)
     {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
+        register(context, BASALTIC_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.BASALTIC_RUBY_ORE_KEY),
+                CCOrePlacements.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(80))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
