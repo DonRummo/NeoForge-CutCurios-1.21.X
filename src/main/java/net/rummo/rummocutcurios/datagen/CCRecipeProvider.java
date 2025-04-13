@@ -53,10 +53,17 @@ public class CCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_basalt_bricks", has(CCBlocks.BASALT_BRICKS))
                 .save(recipeOutput, "basalt_brick_slab_from_basalt_bricks_stonecutting");
 
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(CCBlocks.BASALT_BRICKS), RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICK_WALL, 1)
+                .unlockedBy("has_basalt_bricks", has(CCBlocks.BASALT_BRICKS))
+                .save(recipeOutput, "basalt_brick_wall_from_basalt_bricks_stonecutting");
+
         /** STAIRS & SLABS **/
         stairBuilder(CCBlocks.BASALT_BRICK_STAIRS.get(), Ingredient.of(CCBlocks.BASALT_BRICKS.get())).group("basalt_bricks")
                 .unlockedBy("has_basalt_bricks", has(CCBlocks.BASALT_BRICKS.get())).save(recipeOutput);
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICK_SLAB.get(), CCBlocks.BASALT_BRICKS.get());
+
+        /** FENCES & WALLS **/
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICK_WALL.get(), CCBlocks.BASALT_BRICKS.get());
     }
 
     /* DO NOT TOUCH */

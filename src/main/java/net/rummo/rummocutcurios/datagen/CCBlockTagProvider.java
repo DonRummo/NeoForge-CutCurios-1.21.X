@@ -3,6 +3,7 @@ package net.rummo.rummocutcurios.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.rummo.rummocutcurios.RummoCutCurios;
@@ -35,5 +36,7 @@ public class CCBlockTagProvider extends BlockTagsProvider
                 .add(CCBlocks.CRACKED_BASALT_BRICKS.get())
                 .add(CCBlocks.BASALT_BRICK_STAIRS.get())
                 .add(CCBlocks.BASALT_BRICK_SLAB.get());
+
+        tag(BlockTags.WALLS).add(CCBlocks.BASALT_BRICK_WALL.get());
     }
 }

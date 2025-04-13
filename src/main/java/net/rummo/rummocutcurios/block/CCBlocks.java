@@ -35,14 +35,20 @@ public class CCBlocks
                     .sound(SoundType.BASALT)
                     .strength(1.25f, 4.2f)
                     .requiresCorrectToolForDrops()));
-
     public static final DeferredBlock<Block> BASALT_BRICK_STAIRS = registerBlock("basalt_brick_stairs",
             () -> new StairBlock(CCBlocks.BASALT_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of()
+                            .sound(SoundType.BASALT)
                             .strength(1.25f, 4.2f)
                             .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> BASALT_BRICK_SLAB = registerBlock("basalt_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
+                    .strength(1.25f, 4.2f)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> BASALT_BRICK_WALL = registerBlock("basalt_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
                     .strength(1.25f, 4.2f)
                     .requiresCorrectToolForDrops()));
 

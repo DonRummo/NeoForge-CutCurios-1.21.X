@@ -43,6 +43,7 @@ public class CCCreativeModeTabs
                         pOutput.accept(CCBlocks.CRACKED_BASALT_BRICKS);
                         pOutput.accept(CCBlocks.BASALT_BRICK_STAIRS);
                         pOutput.accept(CCBlocks.BASALT_BRICK_SLAB);
+                        pOutput.accept(CCBlocks.BASALT_BRICK_WALL);
 
                     }).build());
 
