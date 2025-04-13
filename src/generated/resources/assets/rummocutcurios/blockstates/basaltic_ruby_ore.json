@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "rummocutcurios:block/basaltic_ruby_ore_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "rummocutcurios:block/basaltic_ruby_ore"
+    },
+    "axis=z": {
+      "model": "rummocutcurios:block/basaltic_ruby_ore_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -11,6 +11,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.rummo.rummocutcurios.RummoCutCurios;
 import net.rummo.rummocutcurios.block.CCBlocks;
+import net.rummo.rummocutcurios.block.custom.ExperiencePillarBlock;
 
 public class CCBlockStateProvider extends BlockStateProvider
 {
@@ -23,7 +24,9 @@ public class CCBlockStateProvider extends BlockStateProvider
     @Override
     protected void registerStatesAndModels()
     {
-        blockWithItem(CCBlocks.DEEPSLATE_RUBY_ORE);
+        logBlock(((ExperiencePillarBlock) CCBlocks.BASALTIC_RUBY_ORE.get()));
+        blockItem(CCBlocks.BASALTIC_RUBY_ORE);
+
 
         blockWithItem(CCBlocks.BASALT_BRICKS);
         blockWithItem(CCBlocks.CRACKED_BASALT_BRICKS);

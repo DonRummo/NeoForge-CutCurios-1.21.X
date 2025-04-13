@@ -35,5 +35,7 @@ public class DataGenerator
 
         generator.addProvider(event.includeClient(), new CCItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new CCBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new CCWorldGenProvider(packOutput, lookupProvider));
     }
 }

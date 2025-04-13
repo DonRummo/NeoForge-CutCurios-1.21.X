@@ -32,12 +32,12 @@ public class CCCreativeModeTabs
     public static final Supplier<CreativeModeTab> CUTCURIOS_BLOCKS_TAB =
             CREATIVE_MODE_TABS.register("cutcurios_blocks_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.rummocutcurios.cutcurios_blocks_tab"))
-                    .icon(() -> new ItemStack(CCBlocks.DEEPSLATE_RUBY_ORE))
+                    .icon(() -> new ItemStack(CCBlocks.BASALTIC_RUBY_ORE))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(RummoCutCurios.MOD_ID, "cutcurios_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         /** INSERT HERE **/
-                        pOutput.accept(CCBlocks.DEEPSLATE_RUBY_ORE);
+                        pOutput.accept(CCBlocks.BASALTIC_RUBY_ORE);
 
                         pOutput.accept(CCBlocks.BASALT_BRICKS);
                         pOutput.accept(CCBlocks.CRACKED_BASALT_BRICKS);

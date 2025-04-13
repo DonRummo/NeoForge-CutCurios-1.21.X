@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "rummocutcurios:deepslate_ruby_ore"
+              "name": "rummocutcurios:basaltic_ruby_ore"
             },
             {
               "type": "minecraft:item",
@@ -57,5 +57,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "rummocutcurios:blocks/deepslate_ruby_ore"
+  "random_sequence": "rummocutcurios:blocks/basaltic_ruby_ore"
 }

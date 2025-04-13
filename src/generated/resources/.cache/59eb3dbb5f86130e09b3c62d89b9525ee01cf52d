@@ -1,7 +1,7 @@
-// 1.21.1	2025-04-13T12:01:20.5072912	Loot Tables
+// 1.21.1	2025-04-13T14:28:56.6635146	Loot Tables
+aae8fb84e8d78bec43a123ec6d8e0466ccac3d0e data/rummocutcurios/loot_table/blocks/basaltic_ruby_ore.json
 5c202e7b412cd610a5aeb9af735c1d7a6716472e data/rummocutcurios/loot_table/blocks/basalt_bricks.json
 59cb91d5d047f87fb8887f77ad2db1e6cbaa230e data/rummocutcurios/loot_table/blocks/basalt_brick_slab.json
 8481f74011b1c3352a6635c746dd9beb6c870bc9 data/rummocutcurios/loot_table/blocks/basalt_brick_stairs.json
 175040123e0f9292747d9dc8f16cbc119722e6fd data/rummocutcurios/loot_table/blocks/basalt_brick_wall.json
 517fb5003802658e3c579d31bace2ea8446689db data/rummocutcurios/loot_table/blocks/cracked_basalt_bricks.json
-f34cb18969bae5f351e330e74bfdfda47a9e95fc data/rummocutcurios/loot_table/blocks/deepslate_ruby_ore.json

@@ -1,6 +1,7 @@
 package net.rummo.rummocutcurios.block;
 
 import net.rummo.rummocutcurios.RummoCutCurios;
+import net.rummo.rummocutcurios.block.custom.ExperiencePillarBlock;
 import net.rummo.rummocutcurios.item.CCItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -19,10 +20,10 @@ public class CCBlocks
 
     /** BLOCKS GO HERE **/
 
-    public static final DeferredBlock<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
-            () -> new DropExperienceBlock(UniformInt.of(5, 8), BlockBehaviour.Properties.of()
-                    .sound(SoundType.DEEPSLATE)
-                    .strength(6f)
+    public static final DeferredBlock<Block> BASALTIC_RUBY_ORE = registerBlock("basaltic_ruby_ore",
+            () -> new ExperiencePillarBlock(UniformInt.of(5, 8), BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
+                    .strength(2.25f, 4.2f)
                     .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> BASALT_BRICKS = registerBlock("basalt_bricks",

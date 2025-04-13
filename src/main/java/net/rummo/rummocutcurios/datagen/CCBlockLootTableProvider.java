@@ -37,8 +37,8 @@ public class CCBlockLootTableProvider extends BlockLootSubProvider
                 block -> createSlabItemTable(CCBlocks.BASALT_BRICK_SLAB.get()));
         dropSelf(CCBlocks.BASALT_BRICK_WALL.get());
 
-        this.add(CCBlocks.DEEPSLATE_RUBY_ORE.get(),
-                block -> createMultipleOreDrops(CCBlocks.DEEPSLATE_RUBY_ORE.get(), CCItems.ROUGH_RUBY.get(), 1, 3));
+        this.add(CCBlocks.BASALTIC_RUBY_ORE.get(),
+                block -> createMultipleOreDrops(CCBlocks.BASALTIC_RUBY_ORE.get(), CCItems.ROUGH_RUBY.get(), 1, 3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops)
