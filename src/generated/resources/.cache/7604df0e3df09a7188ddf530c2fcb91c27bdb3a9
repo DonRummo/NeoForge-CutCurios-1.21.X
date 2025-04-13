@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-12T20:30:52.1198513	Block States: rummocutcurios
+// 1.21.1	2025-04-12T21:00:09.3339228	Block States: rummocutcurios
 f899a8ddcecea09b0059d3c008dd655c410cbd92 assets/rummocutcurios/blockstates/basalt_bricks.json
 6555a7812ac0374c8bee1375fff6ded03e7b80a5 assets/rummocutcurios/blockstates/basalt_brick_slab.json
 00eba8fe3882bf46785b3472cf88f291405c4249 assets/rummocutcurios/blockstates/basalt_brick_stairs.json
@@ -13,7 +13,7 @@ ba924e7d93aa2ffec824002e52bf633812b74d44 assets/rummocutcurios/models/block/basa
 62493d2010b25e75eccd0dff2dd5182f3fa621e6 assets/rummocutcurios/models/block/cracked_basalt_bricks.json
 d91a0a15f90bd24727dae42431a6cda999495071 assets/rummocutcurios/models/block/deepslate_ruby_ore.json
 0b9299fedfa0be9a4562273941606214c144e1f3 assets/rummocutcurios/models/item/basalt_bricks.json
-47b3c8557dab4659e16f0417171980338f6b822a assets/rummocutcurios/models/item/basalt_brick_slab.json
-edcfef5d9bce834f7e21ec92d8e62fc08c715640 assets/rummocutcurios/models/item/basalt_brick_stairs.json
+d98365510c6019d8ffec4dec0c411333d5bdc7f0 assets/rummocutcurios/models/item/basalt_brick_slab.json
+3d1fcf9cf8bd0040df7736d3222916ab47b9ebaf assets/rummocutcurios/models/item/basalt_brick_stairs.json
 73e6457aa61d290ad3a802ce7a4247f1014e4acf assets/rummocutcurios/models/item/cracked_basalt_bricks.json
 721a46f438f7ea64892e7a31f16739ae750e17ff assets/rummocutcurios/models/item/deepslate_ruby_ore.json
