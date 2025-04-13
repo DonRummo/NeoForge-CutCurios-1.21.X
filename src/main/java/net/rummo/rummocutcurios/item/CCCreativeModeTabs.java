@@ -39,6 +39,11 @@ public class CCCreativeModeTabs
                         /** INSERT HERE **/
                         pOutput.accept(CCBlocks.DEEPSLATE_RUBY_ORE);
 
+                        pOutput.accept(CCBlocks.BASALT_BRICKS);
+                        pOutput.accept(CCBlocks.CRACKED_BASALT_BRICKS);
+                        pOutput.accept(CCBlocks.BASALT_BRICK_STAIRS);
+                        pOutput.accept(CCBlocks.BASALT_BRICK_SLAB);
+
                     }).build());
 
     public static void register(IEventBus eventBus)

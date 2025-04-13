@@ -23,9 +23,17 @@ public class CCBlockTagProvider extends BlockTagsProvider
     protected void addTags(HolderLookup.Provider provider)
     {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(CCBlocks.DEEPSLATE_RUBY_ORE.get());
+                .add(CCBlocks.DEEPSLATE_RUBY_ORE.get())
+                .add(CCBlocks.BASALT_BRICKS.get())
+                .add(CCBlocks.CRACKED_BASALT_BRICKS.get())
+                .add(CCBlocks.BASALT_BRICK_STAIRS.get())
+                .add(CCBlocks.BASALT_BRICK_SLAB.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(CCBlocks.DEEPSLATE_RUBY_ORE.get());
+                .add(CCBlocks.DEEPSLATE_RUBY_ORE.get())
+                .add(CCBlocks.BASALT_BRICKS.get())
+                .add(CCBlocks.CRACKED_BASALT_BRICKS.get())
+                .add(CCBlocks.BASALT_BRICK_STAIRS.get())
+                .add(CCBlocks.BASALT_BRICK_SLAB.get());
     }
 }

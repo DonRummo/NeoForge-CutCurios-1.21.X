@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "basalt_bricks",
+  "key": {
+    "#": {
+      "item": "rummocutcurios:basalt_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "rummocutcurios:basalt_brick_stairs"
+  }
+}

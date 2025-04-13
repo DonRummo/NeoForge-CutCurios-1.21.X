@@ -4,8 +4,10 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.rummo.rummocutcurios.RummoCutCurios;
 import net.rummo.rummocutcurios.block.CCBlocks;
@@ -25,10 +27,32 @@ public class CCRecipeProvider extends RecipeProvider implements IConditionBuilde
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput)
     {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(CCItems.ROUGH_RUBY), RecipeCategory.BUILDING_BLOCKS, CCItems.RUBY, 1)
+        List<ItemLike> BASALT_SMELTABLES = List.of(CCBlocks.BASALT_BRICKS);
+        /** SHAPED **/
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICKS.get(), 4)
+                        .pattern("SS")
+                        .pattern("SS")
+                        .define('S', Items.SMOOTH_BASALT)
+                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT)).save(recipeOutput);
+
+        /** SMELTING **/
+        oreSmelting(recipeOutput, BASALT_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, CCBlocks.CRACKED_BASALT_BRICKS.get(), 0.25f, 200, "cracked_basalt_bricks");
+
+        /** STONECUTTER **/
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(CCItems.ROUGH_RUBY), RecipeCategory.MISC, CCItems.RUBY, 1)
                 .unlockedBy("has_rough_ruby", has(CCItems.ROUGH_RUBY))
                 .save(recipeOutput, "ruby_from_rough_ruby_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_BASALT), RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICKS, 1)
+                .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
+                .save(recipeOutput, "basalt_bricks_from_smooth_basalt_stonecutting");
+
+        /** STAIRS & SLABS **/
+        stairBuilder(CCBlocks.BASALT_BRICK_STAIRS.get(), Ingredient.of(CCBlocks.BASALT_BRICKS.get())).group("basalt_bricks")
+                .unlockedBy("has_basalt_bricks", has(CCBlocks.BASALT_BRICKS.get())).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICK_SLAB.get(), CCBlocks.BASALT_BRICKS.get());
     }
+
+    /* DO NOT TOUCH */
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup)

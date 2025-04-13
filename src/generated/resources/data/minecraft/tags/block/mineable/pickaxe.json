@@ -1,5 +1,9 @@
 {
   "values": [
-    "rummocutcurios:deepslate_ruby_ore"
+    "rummocutcurios:deepslate_ruby_ore",
+    "rummocutcurios:basalt_bricks",
+    "rummocutcurios:cracked_basalt_bricks",
+    "rummocutcurios:basalt_brick_stairs",
+    "rummocutcurios:basalt_brick_slab"
   ]
 }

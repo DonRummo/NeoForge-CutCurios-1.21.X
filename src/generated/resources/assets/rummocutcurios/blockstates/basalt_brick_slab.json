@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rummocutcurios:block/basalt_brick_slab"
+    },
+    "type=double": {
+      "model": "rummocutcurios:block/basalt_bricks"
+    },
+    "type=top": {
+      "model": "rummocutcurios:block/basalt_brick_slab_top"
+    }
+  }
+}

@@ -1,7 +1,14 @@
 {
   "item.rummocutcurios.rough_ruby": "Rough Ruby",
+  "item.rummocutcurios.ruby": "Ruby",
 
   "block.rummocutcurios.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "block.rummocutcurios.basalt_bricks": "Basalt Bricks",
+  "block.rummocutcurios.cracked_basalt_bricks": "Cracked Basalt Bricks",
+
+  "block.rummocutcurios.basalt_brick_stairs": "Basalt Brick Stairs",
+  "block.rummocutcurios.basalt_brick_slab": "Basalt Brick Slab",
 
   "itemGroup.rummocutcurios.cutcurios_items_tab": "Rummo's Cut Curios Items",
   "itemGroup.rummocutcurios.cutcurios_blocks_tab": "Rummo's Cut Curios Blocks"

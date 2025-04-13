@@ -25,6 +25,27 @@ public class CCBlocks
                     .strength(6f)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> BASALT_BRICKS = registerBlock("basalt_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
+                    .strength(1.25f, 4.2f)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CRACKED_BASALT_BRICKS = registerBlock("cracked_basalt_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.BASALT)
+                    .strength(1.25f, 4.2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> BASALT_BRICK_STAIRS = registerBlock("basalt_brick_stairs",
+            () -> new StairBlock(CCBlocks.BASALT_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of()
+                            .strength(1.25f, 4.2f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> BASALT_BRICK_SLAB = registerBlock("basalt_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f)
+                    .requiresCorrectToolForDrops()));
+
     /** DO NOT GO BEYOND THIS POINT **/
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)

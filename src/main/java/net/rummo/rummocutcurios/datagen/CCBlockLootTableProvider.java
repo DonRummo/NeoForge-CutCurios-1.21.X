@@ -30,6 +30,13 @@ public class CCBlockLootTableProvider extends BlockLootSubProvider
     @Override
     protected void generate()
     {
+        dropSelf(CCBlocks.BASALT_BRICKS.get());
+        dropSelf(CCBlocks.CRACKED_BASALT_BRICKS.get());
+
+        dropSelf(CCBlocks.BASALT_BRICK_STAIRS.get());
+        this.add(CCBlocks.BASALT_BRICK_SLAB.get(),
+                block -> createSlabItemTable(CCBlocks.BASALT_BRICK_SLAB.get()));
+
         this.add(CCBlocks.DEEPSLATE_RUBY_ORE.get(),
                 block -> createMultipleOreDrops(CCBlocks.DEEPSLATE_RUBY_ORE.get(), CCItems.ROUGH_RUBY.get(), 1, 3));
     }
