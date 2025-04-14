@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -28,6 +29,19 @@ public class CCRecipeProvider extends RecipeProvider implements IConditionBuilde
     protected void buildRecipes(RecipeOutput recipeOutput)
     {
         List<ItemLike> BASALT_SMELTABLES = List.of(CCBlocks.BASALT_BRICKS);
+
+        /** SHAPELESS **/
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CCItems.HONEY_DIPPED_APPLE)
+                .requires(CCItems.BAKED_APPLE)
+                .requires(Items.HONEYCOMB)
+                .unlockedBy("has_baked_apple", has(CCItems.BAKED_APPLE))
+                .save(recipeOutput, "honey_dipped_apple");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CCItems.COCOA_DIPPED_APPLE)
+                .requires(CCItems.BAKED_APPLE)
+                .requires(Items.COCOA_BEANS)
+                .unlockedBy("has_baked_apple", has(CCItems.BAKED_APPLE))
+                .save(recipeOutput, "cocoa_dipped_apple");
+
         /** SHAPED **/
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, CCBlocks.BASALT_BRICKS.get(), 4)
                         .pattern("SS")
@@ -54,7 +68,19 @@ public class CCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_turtle_scute", has(Items.TURTLE_SCUTE)).save(recipeOutput);
 
         /** SMELTING **/
-        oreSmelting(recipeOutput, BASALT_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, CCBlocks.CRACKED_BASALT_BRICKS.get(), 0.25f, 200, "cracked_basalt_bricks");
+        oreSmelting(recipeOutput, BASALT_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, CCBlocks.CRACKED_BASALT_BRICKS.get(),
+                0.25f, 200, "cracked_basalt_bricks");
+
+        /** COOKING & CAMPFIRE **/
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.APPLE), RecipeCategory.FOOD, CCItems.BAKED_APPLE, 0.35f, 200)
+                .unlockedBy("has_apple", has(Items.APPLE))
+                .save(recipeOutput, "baked_apple_from_smelting");
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(Items.APPLE), RecipeCategory.FOOD, CCItems.BAKED_APPLE, 0.35f, 100)
+                .unlockedBy("has_apple", has(Items.APPLE))
+                .save(recipeOutput, "baked_apple_from_smoking");
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(Items.APPLE), RecipeCategory.FOOD, CCItems.BAKED_APPLE, 0.15f, 200)
+                .unlockedBy("has_apple", has(Items.APPLE))
+                .save(recipeOutput, "baked_apple_from_campfire");
 
         /** STONECUTTER **/
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(CCItems.ROUGH_RUBY), RecipeCategory.MISC, CCItems.RUBY, 1)

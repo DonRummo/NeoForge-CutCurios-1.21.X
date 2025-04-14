@@ -28,6 +28,10 @@ public class CCCreativeModeTabs
                         pOutput.accept(CCItems.ROUGH_RUBY);
                         pOutput.accept(CCItems.RUBY);
 
+                        pOutput.accept(CCItems.BAKED_APPLE);
+                        pOutput.accept(CCItems.HONEY_DIPPED_APPLE);
+                        pOutput.accept(CCItems.COCOA_DIPPED_APPLE);
+
                         pOutput.accept(Items.TURTLE_HELMET);
                         pOutput.accept(CCItems.TURTLE_CHESTPLATE);
                         pOutput.accept(CCItems.TURTLE_LEGGINGS);

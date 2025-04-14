@@ -24,6 +24,10 @@ public class CCItemModelProvider extends ItemModelProvider
         basicItem(CCItems.ROUGH_RUBY.get());
         basicItem(CCItems.RUBY.get());
 
+        basicItem(CCItems.BAKED_APPLE.get());
+        basicItem(CCItems.HONEY_DIPPED_APPLE.get());
+        basicItem(CCItems.COCOA_DIPPED_APPLE.get());
+
         basicItem(CCItems.TURTLE_CHESTPLATE.get());
         basicItem(CCItems.TURTLE_LEGGINGS.get());
         basicItem(CCItems.TURTLE_BOOTS.get());

@@ -22,6 +22,16 @@ public class CCItems
     public static final DeferredItem<Item> RUBY =
             ITEMS.registerItem("ruby", Item::new, new Item.Properties().fireResistant());
 
+    public static final DeferredItem<Item> BAKED_APPLE =
+            ITEMS.registerItem("baked_apple", Item::new, new Item.Properties()
+                    .food(CCFoodProperties.BAKED_APPLE));
+    public static final DeferredItem<Item> HONEY_DIPPED_APPLE =
+            ITEMS.registerItem("honey_dipped_apple", Item::new, new Item.Properties()
+                    .food(CCFoodProperties.HONEY_DIPPED_APPLE));
+    public static final DeferredItem<Item> COCOA_DIPPED_APPLE =
+            ITEMS.registerItem("cocoa_dipped_apple", Item::new, new Item.Properties()
+                    .food(CCFoodProperties.COCOA_DIPPED_APPLE));
+
     public static final DeferredItem<Item> TURTLE_CHESTPLATE =
             ITEMS.register("turtle_chestplate",
                     () -> new CCArmorItem(CCArmorMaterials.TURTLE, ArmorItem.Type.CHESTPLATE,
