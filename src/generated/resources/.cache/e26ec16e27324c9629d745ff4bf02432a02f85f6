@@ -1,4 +1,7 @@
-// 1.21.1	2025-04-13T12:01:20.5101814	Item Models: rummocutcurios
+// 1.21.1	2025-04-14T09:53:47.7074875	Item Models: rummocutcurios
 46c60d4d391b13c9fc43296224de7a86c9df4f30 assets/rummocutcurios/models/item/basalt_brick_wall.json
 80862ce978f17c3667b020c893efbf4d31e635d2 assets/rummocutcurios/models/item/rough_ruby.json
 5751e62702dd6f82a2ae328160eb303310c70d73 assets/rummocutcurios/models/item/ruby.json
+ff6ca644841b3f1c6e15f6219fccf997ce7b9064 assets/rummocutcurios/models/item/turtle_boots.json
+7706e6b6b44ac9e42491e874c7bcdb0294a9afb6 assets/rummocutcurios/models/item/turtle_chestplate.json
+5af67677469b3dba0101f5dd5f79a151a91dbe50 assets/rummocutcurios/models/item/turtle_leggings.json

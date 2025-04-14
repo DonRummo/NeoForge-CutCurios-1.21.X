@@ -1,6 +1,7 @@
 package net.rummo.rummocutcurios;
 
 import net.rummo.rummocutcurios.block.CCBlocks;
+import net.rummo.rummocutcurios.item.CCArmorMaterials;
 import net.rummo.rummocutcurios.item.CCCreativeModeTabs;
 import net.rummo.rummocutcurios.item.CCItems;
 import org.slf4j.Logger;
@@ -44,6 +45,8 @@ public class RummoCutCurios
 
         CCItems.register(modEventBus);
         CCBlocks.register(modEventBus);
+
+        CCArmorMaterials.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.

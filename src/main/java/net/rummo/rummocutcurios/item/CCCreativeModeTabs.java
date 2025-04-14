@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rummo.rummocutcurios.RummoCutCurios;
@@ -26,6 +27,11 @@ public class CCCreativeModeTabs
                         /** INSERT HERE **/
                         pOutput.accept(CCItems.ROUGH_RUBY);
                         pOutput.accept(CCItems.RUBY);
+
+                        pOutput.accept(Items.TURTLE_HELMET);
+                        pOutput.accept(CCItems.TURTLE_CHESTPLATE);
+                        pOutput.accept(CCItems.TURTLE_LEGGINGS);
+                        pOutput.accept(CCItems.TURTLE_BOOTS);
 
                     }).build());
 

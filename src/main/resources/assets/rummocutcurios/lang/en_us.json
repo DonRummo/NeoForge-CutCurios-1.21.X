@@ -2,6 +2,10 @@
   "item.rummocutcurios.rough_ruby": "Rough Ruby",
   "item.rummocutcurios.ruby": "Ruby",
 
+  "item.rummocutcurios.turtle_chestplate": "Turtle Chestplate [TEMP_NAME]",
+  "item.rummocutcurios.turtle_leggings": "Turtle Leggings [TEMP_NAME]",
+  "item.rummocutcurios.turtle_boots": "Turtle Boots [TEMP_NAME]",
+
   "block.rummocutcurios.basaltic_ruby_ore": "Basaltic Ruby Ore",
 
   "block.rummocutcurios.basalt_bricks": "Basalt Bricks",

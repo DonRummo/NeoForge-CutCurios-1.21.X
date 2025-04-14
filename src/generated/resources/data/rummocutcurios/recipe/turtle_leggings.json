@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "minecraft:turtle_scute"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "T T",
+    "T T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "rummocutcurios:turtle_leggings"
+  }
+}

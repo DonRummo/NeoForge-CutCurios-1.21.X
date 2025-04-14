@@ -24,6 +24,10 @@ public class CCItemModelProvider extends ItemModelProvider
         basicItem(CCItems.ROUGH_RUBY.get());
         basicItem(CCItems.RUBY.get());
 
+        basicItem(CCItems.TURTLE_CHESTPLATE.get());
+        basicItem(CCItems.TURTLE_LEGGINGS.get());
+        basicItem(CCItems.TURTLE_BOOTS.get());
+
         wallItem(CCBlocks.BASALT_BRICK_WALL, CCBlocks.BASALT_BRICKS);
     }
 

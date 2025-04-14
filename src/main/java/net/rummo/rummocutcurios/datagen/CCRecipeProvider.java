@@ -35,6 +35,24 @@ public class CCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         .define('S', Items.SMOOTH_BASALT)
                         .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, CCItems.TURTLE_CHESTPLATE.get(), 1)
+                .pattern("T T")
+                .pattern("TTT")
+                .pattern("TTT")
+                .define('T', Items.TURTLE_SCUTE)
+                .unlockedBy("has_turtle_scute", has(Items.TURTLE_SCUTE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, CCItems.TURTLE_LEGGINGS.get(), 1)
+                .pattern("TTT")
+                .pattern("T T")
+                .pattern("T T")
+                .define('T', Items.TURTLE_SCUTE)
+                .unlockedBy("has_turtle_scute", has(Items.TURTLE_SCUTE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, CCItems.TURTLE_BOOTS.get(), 1)
+                .pattern("T T")
+                .pattern("T T")
+                .define('T', Items.TURTLE_SCUTE)
+                .unlockedBy("has_turtle_scute", has(Items.TURTLE_SCUTE)).save(recipeOutput);
+
         /** SMELTING **/
         oreSmelting(recipeOutput, BASALT_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, CCBlocks.CRACKED_BASALT_BRICKS.get(), 0.25f, 200, "cracked_basalt_bricks");
 
