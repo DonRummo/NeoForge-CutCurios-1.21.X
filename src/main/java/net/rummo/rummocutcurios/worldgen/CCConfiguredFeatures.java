@@ -23,7 +23,7 @@ public class CCConfiguredFeatures
         RuleTest basaltReplaceables = new BlockMatchTest(Blocks.BASALT);
 
         register(context, BASALTIC_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(basaltReplaceables,
-                CCBlocks.BASALTIC_RUBY_ORE.get().defaultBlockState(), 5));
+                CCBlocks.BASALTIC_RUBY_ORE.get().defaultBlockState(), 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registryKey(String name)

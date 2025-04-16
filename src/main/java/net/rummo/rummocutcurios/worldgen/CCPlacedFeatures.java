@@ -24,8 +24,8 @@ public class CCPlacedFeatures
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, BASALTIC_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.BASALTIC_RUBY_ORE_KEY),
-                CCOrePlacements.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(80))));
+                CCOrePlacements.commonOrePlacement(15, /// How many vains will spawn in one chunk
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(105))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
